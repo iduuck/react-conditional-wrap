@@ -9,8 +9,8 @@ export default {
   output: {
     file: `dist/bundle${isMin ? '.min' : ''}.js`,
     format: 'cjs',
-    external: ['react'],
   },
+  external: ['react'],
   plugins: [
     isMin && uglify(),
     babel({

@@ -9,7 +9,9 @@
     "build:default": "MODE=default rollup --config rollup.config.js",
     "build:minified": "MODE=minified rollup --config rollup.config.js",
     "flow": "flow",
-    "lint": "eslint ./src/index.js"
+    "lint": "eslint ./src/index.js",
+    "clean": "rimraf dist/",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
     "conditional",
@@ -41,6 +43,7 @@
     "jsdom": "^11.7.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
+    "rimraf": "^2.6.2",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-flow": "^1.1.1",
