@@ -4,12 +4,13 @@
   "description": "Conditionally wrap react components",
   "main": "dist/bundle.min.js",
   "scripts": {
-    "test": "jest",
+    "test:jest": "jest",
+    "test:lint": "eslint ./src/index.js",
+    "test:flow": "flow",
+    "test": "npm run test:jest && npm run test:lint && npm run test:flow",
     "build": "npm run build:minified && npm run build:default",
     "build:default": "MODE=default rollup --config rollup.config.js",
     "build:minified": "MODE=minified rollup --config rollup.config.js",
-    "flow": "flow",
-    "lint": "eslint ./src/index.js",
     "clean": "rimraf dist/",
     "prepublish": "npm run clean && npm run build"
   },
