@@ -1,0 +1,18 @@
+{
+  "name": "react-conditional-wrap",
+  "version": "0.0.1",
+  "description": "Conditionally wrap react components",
+  "main": "dist/bundle.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "conditional",
+    "react",
+    "component",
+    "wrap",
+    "hoc"
+  ],
+  "author": "Nick Schmidt <n@nick.qa>",
+  "license": "MIT"
+}
