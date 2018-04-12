@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "flow",
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "chrome": 48,
+          "browsers": ["last 2 versions", "safari >= 7"]
+        }
+      }
+    ],
+    "react"
+  ],
+  "plugins": ["external-helpers", "transform-object-rest-spread"],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
