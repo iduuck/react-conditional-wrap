@@ -15,6 +15,7 @@ export default {
     isMin && uglify(),
     babel({
       exclude: 'node_modules/**',
+      plugins: ['external-helpers'],
     }),
   ],
 }
